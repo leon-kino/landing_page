@@ -1,0 +1,1 @@
+export const TextHighlight: React.FC = ({ children }) => <>{children}</>;

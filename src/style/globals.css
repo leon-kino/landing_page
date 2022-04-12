@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-xs {
+  @apply text-xs font-bold text-primary-800;
+}
+.primary-sm {
+  @apply text-sm font-bold text-primary-800;
+}
+.primary-base {
+  @apply text-base font-bold text-primary-800;
+}
+.primary-lg {
+  @apply text-lg font-bold text-primary-800;
+}
+.primary-xl {
+  @apply text-xl font-bold text-primary-800;
+}
+.primary-2xl {
+  @apply text-2xl font-bold text-primary-800;
+}
+
+.highlight-xs {
+  @apply border-b-[5px] border-yellow text-xs font-bold text-primary-800;
+}
+.highlight-sm {
+  @apply border-b-[5px] border-yellow text-sm font-bold text-primary-800;
+}
+.highlight-base {
+  @apply border-b-[6px] border-yellow text-base font-bold text-primary-800;
+}
+.highlight-lg {
+  @apply border-b-[6px] border-yellow text-lg font-bold text-primary-800;
+}
+.highlight-xl {
+  @apply border-b-8 border-yellow text-xl font-bold text-primary-800;
+}
+.highlight-2xl {
+  @apply border-b-[10px] border-yellow text-2xl font-bold text-primary-800;
+}
+
+.white-xs {
+  @apply text-xs font-bold text-white;
+}
+.white-sm {
+  @apply text-sm font-bold text-white;
+}
+.white-base {
+  @apply text-base font-bold text-white;
+}
+.white-lg {
+  @apply text-lg font-bold text-white;
+}
+.white-xl {
+  @apply text-xl font-bold text-white;
+}
+.white-2xl {
+  @apply text-2xl font-bold text-white;
+}
+
+.black-xs {
+  @apply text-xs font-bold text-black;
+}
+.black-sm {
+  @apply text-sm font-bold text-black;
+}
+.black-base {
+  @apply text-base font-bold text-black;
+}
+.black-lg {
+  @apply text-lg font-bold text-black;
+}
+.black-xl {
+  @apply text-xl font-bold text-black;
+}
+.black-2xl {
+  @apply text-2xl font-bold text-black;
+}
