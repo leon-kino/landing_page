@@ -77,3 +77,19 @@
 .black-2xl {
   @apply text-2xl font-bold text-black;
 }
+
+.button-primary-default {
+  @apply white-base rounded bg-gradient-to-r from-primary-800 to-primary-500 py-5 px-[50px];
+}
+
+.button-primary-hover {
+  @apply white-base rounded bg-gradient-to-r from-primary-800 to-primary-500 py-5 px-[50px] opacity-70;
+}
+
+.button-orange-default {
+  @apply white-base rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px];
+}
+
+.button-orange-hover {
+  @apply white-base rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px] opacity-70;
+}

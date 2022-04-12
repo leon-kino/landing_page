@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['YuGothic'],
+    },
     fontWeight: {
       light: 300,
       normal: 400,
