@@ -3,7 +3,7 @@ import { CardBaseTagProps } from './CardBaseTag.type';
 export const baseId = 'molecule-card-base-tag';
 
 export const CardBaseTag: React.FC<CardBaseTagProps> = ({ tag, title1, title2, src, content }) => (
-  <div className='h-[614px] w-[500px] bg-white'>
+  <div className='h-[614px] w-[500px] bg-white shadow-md shadow-primary-200'>
     <span className='tag' data-testId='tag-tag'>
       {tag}
     </span>
@@ -18,7 +18,7 @@ export const CardBaseTag: React.FC<CardBaseTagProps> = ({ tag, title1, title2, s
     <div className='mx-auto my-[30px] h-max w-max'>
       <Image src={src} alt={src} width={315} height={315} data-testId='tag-src' />
     </div>
-    <p className='primary-lg mx-auto w-[315px]' data-testId='tag-content'>
+    <p className='primary-base mx-auto w-max' data-testId='tag-content'>
       {content}
     </p>
   </div>
