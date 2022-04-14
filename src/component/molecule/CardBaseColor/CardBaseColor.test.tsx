@@ -12,11 +12,11 @@ describe('component/molecule/CardBaseColor', () => {
     });
     it('color-bgcが適していること', () => {
       render(<CardBaseColor {...props} />);
-      expect(screen.getByTestId('color-bgc')).toHaveClass(props.bgc);
+      expect(screen.getByTestId('color-bgc')).toHaveClass('bg-' + props.bgc);
     });
     it('color-wantが表示されること', () => {
       render(<CardBaseColor {...props} />);
-      expect(screen.getByTestId('color-color')).toHaveTextContent(props.want);
+      expect(screen.getByTestId('color-want')).toHaveTextContent(props.want);
     });
     it('color-arrowSrcがarrowSrcを使って画像を表示していること', () => {
       render(<CardBaseColor {...props} />);

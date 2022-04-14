@@ -21,15 +21,15 @@ export const CardBaseColor: React.FC<CardBaseColorProps> = ({
       <div className='mx-auto my-[20px] h-max w-max rotate-90'>
         <Image src={arrowSrc} alt={arrowSrc} width={30} height={30} data-testId='color-arrowSrc' />
       </div>
-      <h1 className='primary-lg highlight mx-auto w-max leading-none' data-testId='tag-title1'>
+      <h1 className='primary-lg highlight mx-auto w-max leading-none' data-testId='color-title'>
         {title}
       </h1>
     </div>
 
     <div className='mx-auto my-[30px] h-max w-max'>
-      <Image src={imgSrc} alt={imgSrc} width={315} height={315} data-testId='tag-src' />
+      <Image src={imgSrc} alt={imgSrc} width={315} height={315} data-testId='color-imgSrc' />
     </div>
-    <p className='primary-base mx-auto w-max' data-testId='tag-content'>
+    <p className='primary-base mx-auto w-max' data-testId='color-content'>
       {content}
     </p>
   </div>
