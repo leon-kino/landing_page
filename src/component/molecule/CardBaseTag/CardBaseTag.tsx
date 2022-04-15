@@ -18,7 +18,7 @@ export const CardBaseTag: React.FC<CardBaseTagProps> = ({ tag, title1, title2, s
     <div className='mx-auto my-[30px] h-max w-max'>
       <Image src={src} alt={src} width={315} height={315} data-testId='tag-src' />
     </div>
-    <p className='primary-base mx-auto w-max' data-testId='tag-content'>
+    <p className='primary-base center' data-testId='tag-content'>
       {content}
     </p>
   </div>

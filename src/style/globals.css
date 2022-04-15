@@ -82,3 +82,7 @@
 .tag {
   @apply m-0 bg-primary-800 py-[3px] px-5 text-white;
 }
+
+.center {
+  @apply mx-auto w-max;
+}
