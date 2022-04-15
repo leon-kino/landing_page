@@ -21,23 +21,8 @@
   @apply text-2xl font-bold text-primary-800;
 }
 
-.highlight-xs {
-  @apply border-b-[5px] border-yellow text-xs font-bold text-primary-800;
-}
-.highlight-sm {
-  @apply border-b-[5px] border-yellow text-sm font-bold text-primary-800;
-}
-.highlight-base {
-  @apply border-b-[6px] border-yellow text-base font-bold text-primary-800;
-}
-.highlight-lg {
-  @apply border-b-[6px] border-yellow text-lg font-bold text-primary-800;
-}
-.highlight-xl {
-  @apply border-b-8 border-yellow text-xl font-bold text-primary-800;
-}
-.highlight-2xl {
-  @apply border-b-[10px] border-yellow text-2xl font-bold text-primary-800;
+.highlight {
+  @apply border-b-[5px] border-yellow;
 }
 
 .white-xs {
@@ -92,4 +77,12 @@
 
 .button-orange-hover {
   @apply white-base rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px] opacity-70;
+}
+
+.tag {
+  @apply m-0 bg-primary-800 py-[3px] px-5 text-white;
+}
+
+.center {
+  @apply mx-auto w-max;
 }
