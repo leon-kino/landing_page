@@ -80,6 +80,9 @@ describe('component/template/PageFooter', () => {
       });
     });
     //end
-    it.todo('copylightの文字が正しいこと');
+    it('copylightの文字が正しいこと', () => {
+      render(<PageFooter {...props} />);
+      expect(screen.getByTestId(`t-c-pf-copylight`)).toHaveTextContent(props.copylight);
+    });
   });
 });
