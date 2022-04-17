@@ -73,6 +73,8 @@ export const PageFooter: React.FC<PageFooterProps> = ({
         </div>
       </div>
     </div>
-    <h6 className='white-lg mt-[73px] text-center'>{copylight}</h6>
+    <h6 className='white-lg mt-[73px] text-center' data-testId='t-c-pf-coplight'>
+      {copylight}
+    </h6>
   </footer>
 );
