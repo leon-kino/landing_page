@@ -19,50 +19,15 @@ describe('component/template/PageHeader', () => {
       render(<PageHeader {...props} />);
       expect(screen.getByTestId('t-c-ph-logo-link')).toHaveAttribute('href', props.logo.link);
     });
-
-    it(`ナビゲーション 0 のテキストが表示されていること`, () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-0`)).toHaveTextContent(props.navList[0].text);
-    });
-    it('ナビゲーション 0 のリンクが正しいこと', () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-0-link`)).toHaveAttribute(
-        'href',
-        props.navList[0].link,
-      );
-    });
-    it(`ナビゲーション 1 のテキストが表示されていること`, () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-1`)).toHaveTextContent(props.navList[1].text);
-    });
-    it('ナビゲーション 1 のリンクが正しいこと', () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-1-link`)).toHaveAttribute(
-        'href',
-        props.navList[1].link,
-      );
-    });
-    it(`ナビゲーション 2 のテキストが表示されていること`, () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-2`)).toHaveTextContent(props.navList[2].text);
-    });
-    it('ナビゲーション 2 のリンクが正しいこと', () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-2-link`)).toHaveAttribute(
-        'href',
-        props.navList[2].link,
-      );
-    });
-    it(`ナビゲーション 3 のテキストが表示されていること`, () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-3`)).toHaveTextContent(props.navList[3].text);
-    });
-    it('ナビゲーション 3 のリンクが正しいこと', () => {
-      render(<PageHeader {...props} />);
-      expect(screen.getByTestId(`t-c-ph-nav-3-link`)).toHaveAttribute(
-        'href',
-        props.navList[3].link,
-      );
+    propObj.default.navList.forEach((nav, index) => {
+      it(`ナビゲーション ${index} のテキストが表示されていること`, () => {
+        render(<PageHeader {...props} />);
+        expect(screen.getByTestId(`t-c-ph-nav-${index}`)).toHaveTextContent(nav.text);
+      });
+      it(`ナビゲーション ${index} のリンクが正しいこと`, () => {
+        render(<PageHeader {...props} />);
+        expect(screen.getByTestId(`t-c-ph-nav-${index}-link`)).toHaveAttribute('href', nav.link);
+      });
     });
 
     it('buttonのテキストが表示されていること', () => {
