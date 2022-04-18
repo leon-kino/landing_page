@@ -47,7 +47,12 @@ module.exports = {
       xl: '1.875rem',
       '2xl': '2.25rem',
     },
-    extend: {},
+
+    extend: {
+      backgroundImage: {
+        hero: "url('/img/hero.png')",
+      },
+    },
   },
   plugins: [],
 };
