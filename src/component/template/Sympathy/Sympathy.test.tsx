@@ -30,37 +30,5 @@ describe('component/template/Sympathy', () => {
       });
     });
     //endfor
-    //for
-    propObj.default.card.forEach((card, index) => {
-      it(`tag${index}の文字が正しいこと`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-tag`)).toBeInTheDocument();
-      });
-      it(`tag${index}が表示されていること`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-tag`)).toHaveTextContent(card.tag);
-      });
-      it(`title${index}が表示されていること`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-title`)).toBeInTheDocument();
-      });
-      it(`title${index}の文字が正しいこと`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-title`)).toHaveTextContent(card.title);
-      });
-      it(`image${index}が表示されていること`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-image`)).toBeInTheDocument();
-      });
-      it(`content${index}が表示されていること`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-content`)).toBeInTheDocument();
-      });
-      it(`content${index}の文字が正しいこと`, () => {
-        render(<Sympathy {...props} />);
-        expect(screen.getByTestId(`t-s-card-${index}-content`)).toHaveTextContent(card.content);
-      });
-    });
-    //endfor
   });
 });

@@ -1,6 +1,6 @@
 import { SympathyProps } from './Sympathy.type';
 import Check from '~/img/Checked.png';
-import Sympathy from '~/img/Sympathy1.png';
+import Sympathy from '~/img/Sympathy.png';
 
 const defaultProps: SympathyProps = {
   title: 'title',
@@ -9,14 +9,16 @@ const defaultProps: SympathyProps = {
   card: [
     {
       tag: 'tag1',
-      title: 'cardTitle1',
-      image: { src: Sympathy, alt: 'Sympathy1', width: 315, height: 315 },
+      title1: 'cardTitle1',
+      title2: 'cardTitle2',
+      src: Sympathy,
       content: 'content1',
     },
     {
       tag: 'tag2',
-      title: 'cardTitle2',
-      image: { src: Sympathy, alt: 'Sympathy1', width: 315, height: 315 },
+      title1: 'cardTitle1',
+      title2: 'cardTitle2',
+      src: Sympathy,
       content: 'content2',
     },
   ],
