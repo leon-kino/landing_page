@@ -65,7 +65,7 @@ const defaultProps: PricingProps = {
       check6: true,
     },
   ],
-  content: 'content',
+  content: ['content', 'content', 'content'],
 };
 
 export const propObj: { [key: string]: PricingProps } = {

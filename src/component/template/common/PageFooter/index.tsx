@@ -1,26 +1,20 @@
 import { PageFooter as PageFooterPresenter } from './PageFooter';
 import { PageFooterProps } from './PageFooter.type';
-import FaceBook from '~/img/Facebook.png';
-import Hatebu from '~/img/Hatebu.png';
-import Line from '~/img/Line.png';
-import logo from '~/img/Logo.png';
-import Pinterest from '~/img/Pinterest.png';
-import Twitter from '~/img/Twitter.png';
 
 const PageFooter: React.FC = () => {
   const defaultProps: PageFooterProps = {
     logo: {
-      src: logo,
+      src: '/img/logo.png',
       alt: 'fwywd logo',
       width: 156,
       height: 60,
     },
-    catchphrase: 'catchphrase',
+    catchphrase: '良き仲間との出会いは人生最大の財産である',
     iconList: [
       {
         sns: 'Facebook',
         image: {
-          src: FaceBook,
+          src: '/img/FaceBook.png',
           alt: 'FaceBook',
           width: 40,
           height: 40,
@@ -30,7 +24,7 @@ const PageFooter: React.FC = () => {
       {
         sns: 'Twitter',
         image: {
-          src: Twitter,
+          src: '/img/Twitter.png',
           alt: 'Twitter',
           width: 40,
           height: 40,
@@ -40,7 +34,7 @@ const PageFooter: React.FC = () => {
       {
         sns: 'Line',
         image: {
-          src: Line,
+          src: '/img/Line.png',
           alt: 'Line',
           width: 40,
           height: 40,
@@ -50,7 +44,7 @@ const PageFooter: React.FC = () => {
       {
         sns: 'Hatebu',
         image: {
-          src: Hatebu,
+          src: '/img/Hatebu.png',
           alt: 'Hatebu',
           width: 39,
           height: 54,
@@ -60,7 +54,7 @@ const PageFooter: React.FC = () => {
       {
         sns: 'Pinterest',
         image: {
-          src: Pinterest,
+          src: '/img/Pinterest.png',
           alt: 'Pinterest',
           width: 40,
           height: 40,
@@ -69,21 +63,21 @@ const PageFooter: React.FC = () => {
       },
     ],
     aboutList: [
-      { text: 'about1', link: '#about1' },
-      { text: 'about2', link: '#about2' },
-      { text: 'about3', link: '#about3' },
+      { text: '悩み', link: '#Sympathy' },
+      { text: '解決策', link: '#Benefit' },
+      { text: '料金', link: '#Pricing' },
     ],
     legalList: [
-      { text: 'legal1', link: '#legal1' },
-      { text: 'legal2', link: '#legal2' },
-      { text: 'legal3', link: '#legal3' },
-      { text: 'legal4', link: '#legal4' },
+      { text: '利用規約', link: '.' },
+      { text: 'プライバシーポリシー', link: '.' },
+      { text: '特記法表記', link: '.' },
+      { text: '運営会社', link: '.' },
     ],
     linksList: [
-      { text: 'links1', link: '#links1' },
-      { text: 'links2', link: '#links2' },
+      { text: 'メディアキット', link: '.' },
+      { text: 'サイトマップ', link: '.' },
     ],
-    copylight: 'copylight',
+    copylight: '© 2022, KIKAGAKU, Inc., All right reserved.',
   };
   return <PageFooterPresenter {...defaultProps} />;
 };

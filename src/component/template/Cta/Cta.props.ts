@@ -1,5 +1,5 @@
 import { CtaProps } from './Cta.type';
-import CTA from '~/img/CTA.png';
+import CTA from '/img/CTA.png';
 
 const defaultProps: CtaProps = {
   title: 'title',

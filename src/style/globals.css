@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.text {
+  white-space: pre-wrap;
+}
 .primary-xs {
   @apply text-xs font-bold text-primary-800;
 }
@@ -72,11 +75,11 @@
 }
 
 .button-orange-default {
-  @apply white-base rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px];
+  @apply white-lg rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px];
 }
 
 .button-orange-hover {
-  @apply white-base rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px] opacity-70;
+  @apply white-lg rounded bg-gradient-to-r from-orange to-yellow py-5 px-[50px] opacity-70;
 }
 
 .tag {
