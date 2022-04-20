@@ -4,7 +4,7 @@ import { CardBaseColor } from '@/component/molecule/CardBaseColor';
 export const baseId = 'template-benefit';
 
 export const Benefit: React.FC<BenefitProps> = ({ title, subTitle, card, content }) => (
-  <div className='bg-benefit bg-center bg-no-repeat'>
+  <div id='Benefit' className='bg-benefit bg-center bg-no-repeat'>
     <div className='mx-auto mt-[76px] h-[1091px] w-[1100px]'>
       <h2 className='primary-xl highlight center' data-testId='t-b-title'>
         {title}

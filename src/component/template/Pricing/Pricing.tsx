@@ -6,7 +6,7 @@ import { CardPriceWhite } from '@/component/molecule/CardPriceWhite';
 export const baseId = 'template-pricing';
 
 export const Pricing: React.FC<PricingProps> = ({ title, subtitle, card, content }) => (
-  <div className=' bg-primary-50 '>
+  <div id='Pricing' className=' bg-primary-50 '>
     <div className='mx-auto w-[540px] pt-[100px]'>
       <h1 className='primary-2xl center' data-testId='t-p-title'>
         {title}

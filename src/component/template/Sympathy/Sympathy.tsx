@@ -6,7 +6,7 @@ import { CardBaseTag } from '@/component/molecule/CardBaseTag';
 export const baseId = 'template-sympathy';
 
 export const Sympathy: React.FC<SympathyProps> = ({ title, check, content, card }) => (
-  <div className='h-[1100px] bg-primary-50'>
+  <div id='Sympathy' className='h-[1100px] bg-primary-50'>
     <h1 className='highlight primary-xl center pt-[100px]' data-testId='t-s-title'>
       {title}
     </h1>

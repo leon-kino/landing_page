@@ -13,7 +13,7 @@ const PageHeader: React.FC = () => {
     navList: [
       {
         text: 'TOP',
-        link: '#TOP',
+        link: '.',
       },
       {
         text: '悩み',
@@ -21,7 +21,7 @@ const PageHeader: React.FC = () => {
       },
       {
         text: '解決策',
-        link: '#benefit',
+        link: '#Benefit',
       },
       {
         text: '料金',
