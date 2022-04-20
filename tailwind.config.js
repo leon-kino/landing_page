@@ -51,6 +51,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/img/hero.png')",
+        benefit: "url('/img/bgBenefit.png')",
       },
     },
   },
