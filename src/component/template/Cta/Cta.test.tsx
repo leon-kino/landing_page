@@ -10,14 +10,6 @@ describe('component/template/Cta', () => {
     beforeEach(() => {
       props = propObj.default;
     });
-    it('titleが表示されていること', () => {
-      render(<Cta {...props} />);
-      expect(screen.getByTestId('t-cta-title')).toBeInTheDocument();
-    });
-    it('titleのテキストが正しいこと', () => {
-      render(<Cta {...props} />);
-      expect(screen.getByTestId('t-cta-title')).toHaveTextContent(props.title);
-    });
     it('imageが表示されていること', () => {
       render(<Cta {...props} />);
       expect(screen.getByTestId('t-cta-image')).toBeInTheDocument();
