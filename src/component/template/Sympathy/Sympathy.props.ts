@@ -1,6 +1,6 @@
 import { SympathyProps } from './Sympathy.type';
-import Check from '~/img/Checked.png';
-import Sympathy from '~/img/Sympathy.png';
+import Check from '/img/Checked.png';
+import Sympathy from '/img/Sympathy.png';
 
 const defaultProps: SympathyProps = {
   title: 'title',

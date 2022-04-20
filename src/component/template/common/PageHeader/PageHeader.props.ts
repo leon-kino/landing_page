@@ -1,5 +1,5 @@
 import { PageHeaderProps } from './PageHeader.type';
-import Logo from '~/img/Logo.png';
+import Logo from '/img/Logo.png';
 
 const defaultProps: PageHeaderProps = {
   logo: {

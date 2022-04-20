@@ -21,5 +21,5 @@ export interface PricingProps {
     content6: string;
     check6: boolean;
   }[];
-  content: string;
+  content: string[];
 }

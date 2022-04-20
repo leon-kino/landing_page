@@ -13,9 +13,9 @@ export const PageFooter: React.FC<PageFooterProps> = ({
   linksList,
   copylight,
 }) => (
-  <footer className='h-[630px] w-[1440px] bg-primary-800'>
-    <p className='white-lg pt-[44px] pl-[1080px]'>\SNSでシェア/</p>
-    <div className='flex justify-between'>
+  <footer className='h-[630px]  bg-primary-800'>
+    <p className='white-lg ml-[1380px] pt-[44px]'>\SNSでシェア/</p>
+    <div className='mx-auto flex w-10/12 justify-between'>
       <div className='mt-[28px] ml-[49px] '>
         <Image {...logo} data-testId='t-c-pf-logo' />
       </div>
@@ -34,8 +34,8 @@ export const PageFooter: React.FC<PageFooterProps> = ({
         ))}
       </div>
     </div>
-    <hr className='mx-auto mt-[20px] w-[1338px] border-white' />
-    <div className='flex'>
+    <hr className='mx-auto mt-[20px] w-10/12 border-white' />
+    <div className='mx-auto flex w-10/12'>
       <div className='mx-[53px] mt-[57px] h-[233px] w-[225px]'>
         <h5 className='white-lg'>About</h5>
         <div className='mt-[15px]'>

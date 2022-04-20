@@ -1,39 +1,36 @@
 import { PageHeader as PageHeaderPresenter } from './PageHeader';
 import { PageHeaderProps } from './PageHeader.type';
-import Logo from '~/img/Logo.png';
+
+const GF =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdiNPV_fNAODFyldaFWFTupyQAnTm9eaSTiJlXa8fF9beJIBg/viewform?usp=sf_link';
 
 const PageHeader: React.FC = () => {
   const defaultProps: PageHeaderProps = {
     logo: {
-      image: {
-        src: Logo,
-        alt: 'fwywdLogo',
-        width: 156,
-        height: 60,
-      },
-      link: '/',
+      image: { src: '/img/Logo.png', alt: 'fwywd Logo', width: 156, height: 60 },
+      link: '.',
     },
     navList: [
       {
-        text: 'nav1',
-        link: '#nav1',
+        text: 'TOP',
+        link: '.',
       },
       {
-        text: 'nav2',
-        link: '#nav2',
+        text: '悩み',
+        link: '#Sympathy',
       },
       {
-        text: 'nav3',
-        link: '#nav3',
+        text: '解決策',
+        link: '#Benefit',
       },
       {
-        text: 'nav4',
-        link: '#nav4',
+        text: '料金',
+        link: '#Pricing',
       },
     ],
     button: {
-      text: 'button',
-      link: '/',
+      text: '資料ダウンロード',
+      link: GF,
     },
   };
   return <PageHeaderPresenter {...defaultProps} />;
