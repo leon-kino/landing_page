@@ -1,10 +1,8 @@
 import { CtaProps } from './Cta.type';
-import CTA from '/img/CTA.png';
 
 const defaultProps: CtaProps = {
-  title: 'title',
   image: {
-    src: CTA,
+    src: '/img/CTA.png',
     alt: 'CTA image',
     width: 600,
     height: 600,

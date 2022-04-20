@@ -1,10 +1,10 @@
 import { PageFooterProps } from './PageFooter.type';
-import FaceBook from '/img/Facebook.png';
-import Hatebu from '/img/Hatebu.png';
-import Line from '/img/Line.png';
-import logo from '/img/Logo.png';
-import Pinterest from '/img/Pinterest.png';
-import Twitter from '/img/Twitter.png';
+import FaceBook from '~/img/Facebook.png';
+import Hatebu from '~/img/Hatebu.png';
+import Line from '~/img/Line.png';
+import logo from '~/img/Logo.png';
+import Pinterest from '~/img/Pinterest.png';
+import Twitter from '~/img/Twitter.png';
 
 const defaultProps: PageFooterProps = {
   logo: {
