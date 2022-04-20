@@ -32,10 +32,10 @@
   @apply text-sm font-bold text-white;
 }
 .white-base {
-  @apply text-base font-bold text-white;
+  @apply text-base font-bold tracking-widest text-white;
 }
 .white-lg {
-  @apply text-lg font-bold text-white;
+  @apply text-lg font-bold tracking-widest text-white;
 }
 .white-xl {
   @apply text-xl font-bold text-white;
