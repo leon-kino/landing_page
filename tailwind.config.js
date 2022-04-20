@@ -50,7 +50,7 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        hero: "url('/img/hero.png')",
+        hero: "url('/img/Hero.png')",
         benefit: "url('/img/bgBenefit.png')",
       },
     },

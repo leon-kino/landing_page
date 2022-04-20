@@ -4,7 +4,7 @@ import { PageFooterProps } from './PageFooter.type';
 const PageFooter: React.FC = () => {
   const defaultProps: PageFooterProps = {
     logo: {
-      src: '/img/logo.png',
+      src: '/img/Logo.png',
       alt: 'fwywd logo',
       width: 156,
       height: 60,
@@ -14,7 +14,7 @@ const PageFooter: React.FC = () => {
       {
         sns: 'Facebook',
         image: {
-          src: '/img/FaceBook.png',
+          src: '/img/Facebook.png',
           alt: 'FaceBook',
           width: 40,
           height: 40,
