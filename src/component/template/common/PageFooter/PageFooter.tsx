@@ -14,24 +14,26 @@ export const PageFooter: React.FC<PageFooterProps> = ({
   copylight,
 }) => (
   <footer className='h-[630px]  bg-primary-800'>
-    <p className='white-lg ml-[1380px] pt-[44px]'>\SNSでシェア/</p>
-    <div className='mx-auto flex w-10/12 justify-between'>
+    <div className='mx-auto flex w-10/12 items-end justify-between'>
       <div className='mt-[28px] ml-[49px] '>
         <Image {...logo} data-testId='t-c-pf-logo' />
       </div>
       <div>
-        <p className='white-lg mt-[40px]' data-testId='t-c-pf-cathphrase'>
+        <p className='white-lg pb-4' data-testId='t-c-pf-cathphrase'>
           {catchphrase}
         </p>
       </div>
-      <div className='mt-[23px] mr-[67px] flex'>
-        {iconList.map((icon, index) => (
-          <a href={icon.link} key={index} data-testId={`t-c-pf-${icon.sns}-link`}>
-            <div className='mx-[10px] flex h-[62px] w-[62px] items-center justify-center rounded bg-white'>
-              <Image {...icon.image} data-testId={`t-c-pf-${icon.sns}`} />
-            </div>
-          </a>
-        ))}
+      <div>
+        <p className='white-lg center pt-[44px]'>\SNSでシェア/</p>
+        <div className='mt-[23px] mr-[67px] flex'>
+          {iconList.map((icon, index) => (
+            <a href={icon.link} key={index} data-testId={`t-c-pf-${icon.sns}-link`}>
+              <div className='mx-[10px] flex h-[62px] w-[62px] items-center justify-center rounded bg-white'>
+                <Image {...icon.image} data-testId={`t-c-pf-${icon.sns}`} />
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
     <hr className='mx-auto mt-[20px] w-10/12 border-white' />
