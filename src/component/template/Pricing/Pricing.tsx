@@ -26,14 +26,8 @@ export const Pricing: React.FC<PricingProps> = ({ title, subtitle, card, content
     <div className='center pb-[100px]'>
       {content.map((content, index) => (
         <div key={index} className='flex items-center'>
-          <Image
-            src={'/img/Checked.png'}
-            alt={'/img/Checked.png'}
-            width={32}
-            height={29}
-            data-testId={'Dark-img-' + content}
-          />
-          <p className='primary-lg py-[6px] pl-[10px] ' data-testId='t-p-content'>
+          <Image src={'/img/Checked.png'} alt={'/img/Checked.png'} width={32} height={29} />
+          <p className='primary-lg py-[6px] pl-[10px] ' data-testId={`t-p-content-${index}`}>
             {content}
           </p>
         </div>

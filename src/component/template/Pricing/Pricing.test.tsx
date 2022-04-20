@@ -27,13 +27,15 @@ describe('component/template/Pricing', () => {
       render(<Pricing {...props} />);
       expect(screen.getByTestId('t-p-subtitle')).toHaveTextContent(props.subtitle);
     });
-    it('contentが表示されていること', () => {
-      render(<Pricing {...props} />);
-      expect(screen.getByTestId('t-p-content')).toBeInTheDocument();
-    });
-    it('contentのテキストが正しいこと', () => {
-      render(<Pricing {...props} />);
-      expect(screen.getByTestId('t-p-content')).toHaveTextContent(props.content);
+    propObj.default.content.forEach((content, index) => {
+      it('contentが表示されていること', () => {
+        render(<Pricing {...props} />);
+        expect(screen.getByTestId(`t-p-content-${index}`)).toBeInTheDocument();
+      });
+      it('contentのテキストが正しいこと', () => {
+        render(<Pricing {...props} />);
+        expect(screen.getByTestId(`t-p-content-${index}`)).toHaveTextContent(content);
+      });
     });
   });
 });
